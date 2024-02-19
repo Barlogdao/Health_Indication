@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace RB.UI
@@ -17,6 +16,7 @@ namespace RB.UI
 
             PrepareView();
         }
+
         private void OnDestroy()
         {
             if (_health != null)
