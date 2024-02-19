@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 public class EntryPoint : MonoBehaviour
 {
-    [SerializeField] private HealthTextView _textView;
-    [SerializeField] private HealthBarView _barView;
-    [SerializeField] private HealthSmoothBarView _smoothBarView;
+    [SerializeField] private HealthText _textView;
+    [SerializeField] private HealthBar _barView;
+    [SerializeField] private HealthBarSmooth _smoothBarView;
 
     [SerializeField] private Button _damageButton;
     [SerializeField] private Button _healButton;

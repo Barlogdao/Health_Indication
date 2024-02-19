@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace RB.UI
 {
-    public class HealthBarView : HealthView
+    public class HealthBar : HealthView
     {
         [SerializeField] private Slider _slider;
         protected override void OnHealthChanged(int targetValue)

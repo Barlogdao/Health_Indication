@@ -3,7 +3,7 @@ using TMPro;
 
 namespace RB.UI
 {
-    public class HealthTextView : HealthView
+    public class HealthText : HealthView
     {
         [SerializeField] private TextMeshProUGUI _textLabel;
 

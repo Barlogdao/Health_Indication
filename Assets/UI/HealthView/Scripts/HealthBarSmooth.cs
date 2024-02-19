@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace RB.UI
 {
-    public class HealthSmoothBarView : HealthView
+    public class HealthBarSmooth : HealthView
     {
         [SerializeField] private Slider _slider;
         [SerializeField] private Image _fillerImage;
@@ -31,9 +31,9 @@ namespace RB.UI
 
         private IEnumerator UpdateView(int targetValue)
         {
+            float elapsedTime = 0f;
             float startValue = _slider.value;
             float endValue = (float)targetValue / MaxValue;
-            float elapsedTime = 0;
 
             while (_slider.value != endValue)
             {
